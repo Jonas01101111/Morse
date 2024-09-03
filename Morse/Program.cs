@@ -8,92 +8,93 @@ namespace Morse
 {
     internal class Program
     {
-        static string ToMorse(string letra) 
+        static string ToMorse(char letra) 
         {
             string codificado;
-
+            
             switch (letra) 
             {
                 case "a":
-                    codificado = "";
+                    codificado = ".-";
                     break;
                 case "b":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "c":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "d":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "e":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "f":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "g":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "h":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "i":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "j":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "k":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "l":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "m":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "n":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "o":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "p":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "q":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "r":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "s":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "t":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "u":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "v":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "w":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "x":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "y":
-                    codificado = "";
+                    codificado = "a";
                     break;
                 case "z ":
-                    codificado = "";
+                    codificado = "a";
                     break;
 
             }
+            return codificado;
 
         }
 
@@ -102,11 +103,11 @@ namespace Morse
         static void Main(string[] args)
         {   
             string texto = "aaaa";
-            string codigo =""
+            string codigo = "";
 
-            foreach (char c in texto[]) 
+            foreach (char c in texto) 
             {
-            
+                codigo = ToMorse(c)
             }
 
 
