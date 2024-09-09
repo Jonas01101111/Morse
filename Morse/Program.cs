@@ -10,65 +10,65 @@ namespace Morse
     {
         static string ToMorse(char letra) 
         {
-            string codificado;
+            string codificado="";
             
             switch (letra) 
             {
-                case "a":
+                case 'a':
                     codificado = ".-";
                     break;
-                case "b":
+                case 'b':
                     codificado = "a";
                     break;
-                case "c":
+                case 'c':
                     codificado = "a";
                     break;
-                case "d":
+                case 'd':
                     codificado = "a";
                     break;
-                case "e":
+                case 'e':
                     codificado = "a";
                     break;
-                case "f":
+                case 'f':
                     codificado = "a";
                     break;
-                case "g":
+                case 'g':
                     codificado = "a";
                     break;
-                case "h":
+                case 'h':
                     codificado = "a";
                     break;
-                case "i":
+                case 'i':
                     codificado = "a";
                     break;
-                case "j":
+                case 'j':
                     codificado = "a";
                     break;
-                case "k":
+                case 'k':
                     codificado = "a";
                     break;
-                case "l":
+                case 'l':
                     codificado = "a";
                     break;
-                case "m":
+                case 'm':
                     codificado = "a";
                     break;
-                case "n":
+                case 'n':
                     codificado = "a";
                     break;
-                case "o":
+                case 'o':
                     codificado = "a";
                     break;
-                case "p":
+                case 'p':
                     codificado = "a";
                     break;
-                case "q":
+                case 'q':
                     codificado = "a";
                     break;
-                case "r":
+                case 'r':
                     codificado = "a";
                     break;
-                case "s":
+                case 's':
                     codificado = "a";
                     break;
                 case "t":
@@ -107,7 +107,7 @@ namespace Morse
 
             foreach (char c in texto) 
             {
-                codigo = ToMorse(c)
+                codigo = ToMorse(c);
             }
 
 
