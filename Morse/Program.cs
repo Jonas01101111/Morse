@@ -18,79 +18,79 @@ namespace Morse
                     codificado = ".-";
                     break;
                 case 'b':
-                    codificado = "a";
+                    codificado = "-...";
                     break;
                 case 'c':
-                    codificado = "a";
+                    codificado = "-.-.";
                     break;
                 case 'd':
-                    codificado = "a";
+                    codificado = "-..";
                     break;
                 case 'e':
-                    codificado = "a";
+                    codificado = ".";
                     break;
                 case 'f':
-                    codificado = "a";
+                    codificado = "..-.";
                     break;
                 case 'g':
-                    codificado = "a";
+                    codificado = "--.";
                     break;
                 case 'h':
-                    codificado = "a";
+                    codificado = "....";
                     break;
                 case 'i':
-                    codificado = "a";
+                    codificado = "..";
                     break;
                 case 'j':
-                    codificado = "a";
+                    codificado = ".---";
                     break;
                 case 'k':
-                    codificado = "a";
+                    codificado = "-.-";
                     break;
                 case 'l':
-                    codificado = "a";
+                    codificado = ".-..";
                     break;
                 case 'm':
-                    codificado = "a";
+                    codificado = "--";
                     break;
                 case 'n':
-                    codificado = "a";
+                    codificado = "-.";
                     break;
                 case 'o':
-                    codificado = "a";
+                    codificado = "---";
                     break;
                 case 'p':
-                    codificado = "a";
+                    codificado = ".--.";
                     break;
                 case 'q':
-                    codificado = "a";
+                    codificado = "--.-";
                     break;
                 case 'r':
-                    codificado = "a";
+                    codificado = ".-.";
                     break;
                 case 's':
-                    codificado = "a";
+                    codificado = "...";
                     break;
-                case "t":
-                    codificado = "a";
+                case 't':
+                    codificado = "-";
                     break;
-                case "u":
-                    codificado = "a";
+                case 'u':
+                    codificado = "..-";
                     break;
-                case "v":
-                    codificado = "a";
+                case 'v':
+                    codificado = "...-";
                     break;
-                case "w":
-                    codificado = "a";
+                case 'w':
+                    codificado = ".--";
                     break;
-                case "x":
-                    codificado = "a";
+                case 'x':
+                    codificado = "-..-";
                     break;
-                case "y":
-                    codificado = "a";
+                case 'y':
+                    codificado = "-.--";
                     break;
-                case "z ":
-                    codificado = "a";
+                case 'z':
+                    codificado = "--..";
                     break;
 
             }
@@ -102,15 +102,17 @@ namespace Morse
 
         static void Main(string[] args)
         {   
-            string texto = "aaaa";
+            string texto = "s os";
             string codigo = "";
 
             foreach (char c in texto) 
             {
-                codigo = ToMorse(c);
+                codigo += ToMorse(c) +" ";
             }
 
+            Console.WriteLine(codigo);
 
+            Console.ReadKey();
         }
     }
 }
