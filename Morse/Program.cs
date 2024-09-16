@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Morse
 {
     internal class Program
     {
-        static string ToMorse(char letra) 
+        static string ToMorse(char letra)
         {
-            string codificado="";
-            
-            switch (letra) 
+            string codificado = "";
+
+            switch (letra)
             {
                 case 'a':
                     codificado = ".-";
@@ -92,27 +93,62 @@ namespace Morse
                 case 'z':
                     codificado = "--..";
                     break;
-
+                case ' ':
+                    codificado = " ";
+                    break;
             }
             return codificado;
 
-        }
+        } 
+        static void ToSound (char codi_ficado)
+        {
+            switch (codi_ficado) 
+            {
+
+                case '.':
+                    Console.Beep(800, 200);
+                    break;
+                case '-':
+                    Console.Beep(800, 600);
+                    break;
+                case ' ':
+                    Console.Beep(37, 600);
+                    break;
+                
+            }
+            }
+
 
 
 
         static void Main(string[] args)
-        {   
-            string texto = "s os";
-            string codigo = "";
-
-            foreach (char c in texto) 
+        {
+            while (true)
             {
-                codigo += ToMorse(c) +" ";
+
+                Console.WriteLine("Digite sua mensagem:");
+                string texto = Console.ReadLine();
+                string codigo = "";
+
+                foreach (char c in texto)
+                {
+                    codigo += ToMorse(c) + " ";
+                }
+                Console.Clear();
+                Console.WriteLine("Mensagem:");
+                Console.WriteLine(codigo);
+
+                foreach (char c in codigo)
+                {
+                    ToSound(c);
+                }
+
+                Console.Clear();
+                Console.WriteLine("Aperte enter");
+
+                Console.ReadKey();
             }
-
-            Console.WriteLine(codigo);
-
-            Console.ReadKey();
+        
         }
     }
 }
