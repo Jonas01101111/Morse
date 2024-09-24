@@ -125,7 +125,7 @@ namespace Morse
         {
             while (true)
             {
-
+                Console.Clear();
                 Console.WriteLine("Digite sua mensagem:");
                 string texto = Console.ReadLine();
                 string codigo = "";
